@@ -26,7 +26,7 @@ void DoorTimerAdapter::Timeout() {
 }
 
 TimedDoor::TimedDoor(int time) {
-    this->iTimeout=time;
+    this->iTimeout = time;
     opened = false;
     adapter = new DoorTimerAdapter(*this);
 }
